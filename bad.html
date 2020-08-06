@@ -1,0 +1,193 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0 ,user-scalable=0"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="./assets/styles.css" />
+	</head>
+
+	<body style="width: auto;">
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="./index.html">Ulhasnagar</a>
+			<a href="./amb.html">Ambernath</a>
+			<!-- <a href="./bad.html">Badlapur</a> -->
+			<a href="./kdmc.html">KDMC</a>
+			<!-- <a href="#">Contact</a> -->
+		</div>
+		<div class="topnav">
+			<a href="./index.html" class="active">AMBERNATH COVID-19</a>
+			<a href="javascript:void(0);" class="icon" onclick="openNav()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		<div class="container">
+			<!-- Card stats -->
+			<div class="card card-stats">
+				<!-- Card body -->
+				<div class="card-body" style="padding-bottom: 0px;">
+					<div class="stat__item confirmedbad col">
+						<h5 class="card-title text-uppercase text-muted">
+							Total Cases<br />
+							<h5 style="color: #ff073a;">एकूण बाधित रुग्ण</h5>
+						</h5>
+						<span class="number h2 font-weight-bold total color-red count"
+							>🔃</span
+						>
+					</div>
+					<div
+						class="icon icon-shape bg-gradient-red text-white rounded-circle shadow"
+					>
+						<i class="fas fa-users"></i>
+					</div>
+				</div>
+				<div class="card card-stats" style="margin-top: 0px;">
+					<div
+						class="stat__item confirmedbad card-body"
+						style="padding-bottom: 10px; padding-top: 10px;"
+					>
+						<div class="col">
+							<h5 class="card-title text-uppercase text-muted">
+								Today's Cases<br />
+								<h5 style="color: #ff073a;">आजचे रुग्ण</h5>
+							</h5>
+						</div>
+						<span class="new h1 font-weight-bold oldtotal color-red count"
+							>🔃</span
+						>
+					</div>
+				</div>
+			</div>
+			<div class="card card-stats">
+				<!-- Card body -->
+				<div class="card-body" style="padding-bottom: 0px;">
+					<div class="stat__item activebad col">
+						<h5 class="card-title text-uppercase text-muted">
+							Active Cases<br />
+							<h5 style="color: #007bff;">रुग्णालयात दाखल</h5>
+						</h5>
+						<span class="number h2 font-weight-bold total color-blue count"
+							>🔃</span
+						>
+						<br />
+						<div style="width: 41px; white-space: nowrap; overflow: hidden;">
+							<span class="badact h1" style="color: #3e39ae;">🔃</span>
+						</div>
+					</div>
+					<div
+						class="icon icon-shape bg-gradient-blue text-white rounded-circle shadow"
+					>
+						<i class="fas fa-procedures"></i>
+					</div>
+				</div>
+			</div>
+			<div class="card card-stats">
+				<!-- Card body -->
+				<div class="card-body" style="padding-bottom: 0px;">
+					<div class="stat__item recoveredbad col">
+						<h5 class="card-title text-uppercase text-muted">
+							Recovered Cases<br />
+							<h5 style="color: #28a745;">बरे झालेले रुग्ण</h5>
+						</h5>
+						<span class="number h2 font-weight-bold total color-green count"
+							>🔃</span
+						>
+						<div style="width: 41px; white-space: nowrap; overflow: hidden;">
+							<span class="badrec h1" style="color: #3e39ae;">🔃</span>
+						</div>
+					</div>
+					<div
+						class="icon icon-shape bg-gradient-green text-white rounded-circle shadow"
+					>
+						<i class="fas fa-child"></i>
+					</div>
+				</div>
+				<div class="card card-stats" style="margin-top: 0px;">
+					<div
+						class="stat__item recoveredbad card-body"
+						style="padding-bottom: 10px; padding-top: 10px;"
+					>
+						<div class="stat__item recoveredbad col">
+							<h5 class="card-title text-uppercase text-muted">
+								Today's Cases<br />
+								<h5 style="color: #28a745;">आजचे रुग्ण</h5>
+							</h5>
+						</div>
+						<span class="new h1 font-weight-bold oldtotal color-red count"
+							>🔃</span
+						>
+					</div>
+				</div>
+			</div>
+			<div class="card card-stats">
+				<!-- Card body -->
+				<div class="card-body" style="padding-bottom: 0px;">
+					<div class="stat__item deceasedbad col">
+						<h5 class="card-title text-uppercase text-muted">
+							Deceased Cases<br />
+							<h5 style="color: #6c757d;">मृत्यू झालेले रुग्ण</h5>
+						</h5>
+						<span class="number h2 font-weight-bold total color-orange count"
+							>🔃</span
+						>
+						<div style="width: 41px; white-space: nowrap; overflow: hidden;">
+							<span class="baddec h1" style="color: #3e39ae;">🔃</span>
+						</div>
+						<br />
+					</div>
+					<div
+						class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow"
+					>
+						<i class="fas fa-user-alt-slash"></i>
+					</div>
+				</div>
+				<div class="card card-stats" style="margin-top: 0px;">
+					<div
+						class="stat__item deceasedbad card-body"
+						style="padding-bottom: 10px; padding-top: 10px;"
+					>
+						<div class="stat__item deceasedbad col">
+							<h5 class="card-title text-uppercase text-muted">
+								Today's Cases<br />
+								<h5 style="color: #6c757d;">आजचे रुग्ण</h5>
+							</h5>
+						</div>
+						<span class="new h1 font-weight-bold oldtotal color-red count"
+							>🔃</span
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright text-center col-lg-12 col-sm-12">
+			<p class="text-center">
+				Design:
+				<a href="https://www.instagram.com/sumit_walmiki/">Sumit Walmiki</a>
+			</p>
+		</div>
+		<script src="./assets/bad.js"></script>
+		<script>
+			function openNav() {
+				document.getElementById("mySidebar").style.width = "100%";
+				document.getElementById("mySidebar").style.textAlign = "center";
+				// document.getElementById("mySidebar").style.paddingTop = "70%";
+				document.getElementById("main").style.marginLeft = "250px";
+			}
+
+			function closeNav() {
+				document.getElementById("mySidebar").style.width = "0";
+				document.getElementById("main").style.marginLeft = "0";
+			}
+		</script>
+	</body>
+</html>

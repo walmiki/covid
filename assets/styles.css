@@ -1,0 +1,324 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: sans-serif;
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	font-family: Open Sans, sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: left;
+	color: #525f7f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #fff;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: inherit;
+	font-weight: 700;
+	color: #32325f;
+	margin: 0;
+}
+
+.text-muted {
+	color: #8898aa !important;
+}
+
+.text-uppercase {
+	text-transform: uppercase !important;
+}
+
+.text-white {
+	color: #fff !important;
+}
+
+.shadow {
+	box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15) !important;
+}
+
+.rounded-circle {
+	border-radius: 15px !important;
+}
+
+.font-weight-bold {
+	font-weight: 700 !important;
+}
+
+.container {
+	width: 100%;
+	height: auto;
+	background: #f4f8fd;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+h1.title {
+	font-size: 2.4rem;
+	font-weight: 700;
+	text-align: center;
+	margin-left: 20px;
+}
+
+.col {
+	max-width: 100%;
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	background-color: #fff;
+	background-clip: border-box;
+	border: 0;
+	box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15);
+	border-radius: 15px;
+	margin: 10px;
+}
+
+.card-body {
+	min-height: 1px;
+	padding: 1.5rem;
+	display: flex;
+	padding: 1rem 1.5rem;
+	border-radius: 15px;
+}
+
+.card-body .h2 {
+	font-size: 2rem;
+}
+
+.icon {
+	width: 4rem;
+	height: 4rem;
+	max-width: 100%;
+	flex: 0 0 auto;
+}
+
+.icon-shape {
+	display: inline-flex;
+	padding: 12px;
+	text-align: center;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon-shape i,
+.icon-shape svg {
+	font-size: 2rem;
+}
+
+.bg-gradient-red {
+	background: linear-gradient(87deg, #f5365c 0, #f56036 100%) !important;
+}
+
+.bg-gradient-blue {
+	background: linear-gradient(87deg, #11cdef 0, #1171ef 100%) !important;
+}
+
+.bg-gradient-green {
+	background: linear-gradient(87deg, #2dce89 0, #2dcecc 100%) !important;
+}
+
+.bg-gradient-orange {
+	background: linear-gradient(87deg, #6c757d 0, #8898aa 100%) !important;
+}
+
+.sidebar {
+	height: 100vh;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	/* padding: 15% 0; */
+}
+
+.sidebar a {
+	/* margin-top: 20%; */
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 32px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+	text-align: left;
+}
+
+.sidebar a:hover {
+	color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.openbtn {
+	font-size: 20px;
+	cursor: pointer;
+	background-color: #111;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+}
+
+.openbtn:hover {
+	background-color: #444;
+}
+
+#main {
+	transition: margin-left 0.5s;
+	padding: 16px;
+}
+#main button {
+	/* float: left; */
+	display: inline;
+}
+#main h1 {
+	/* float: right;
+	margin-left: 20px; */
+	display: inline;
+}
+/* .mystyle {
+	display: none;
+	width: 0 !important;
+	padding: 0 !important;
+} */
+.openNav {
+	display: block;
+	width: 100% !important;
+}
+.closeNav {
+	display: none;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media only screen and (min-width: 340px) {
+	.sidebar {
+		padding-top: 60%;
+	}
+	.sidebar a {
+		text-align: left;
+		margin-left: 25%;
+		font-size: 32px;
+	}
+}
+@media only screen and (min-width: 600px) {
+	.sidebar {
+		padding-top: 41%;
+	}
+	.sidebar a {
+		text-align: left;
+		margin-left: 25%;
+		font-size: 32px;
+	}
+}
+@media screen and (min-width: 740px) {
+	.sidebar {
+		padding-top: 30%;
+	}
+	.sidebar a {
+		font-size: 32px;
+		text-align: left;
+	}
+}
+@media screen and (min-width: 1007px) {
+	.sidebar {
+		padding-top: 18%;
+	}
+	.sidebar a {
+		font-size: 32px;
+	}
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: transparent;
+	position: relative;
+	width: 100%;
+}
+
+.topnav a {
+	/* text-align: center; */
+	color: black;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 41px;
+	font-weight: 700;
+	display: block;
+	/* margin-right: 20px; */
+	/* width: 20%; */
+}
+
+.topnav a.icon {
+	background: black;
+	color: white;
+	display: block;
+	margin-top: 10px;
+	margin-left: 22px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.topnav a:hover {
+	background-color: transparent;
+	color: black;
+}
+
+.topnav .active {
+	margin-left: 20% !important;
+}
+
+/* @media only screen and (min-width: 340px) {
+} */
+@media only screen and (min-width: 660px) {
+	.active {
+		font-size: 20px;
+		padding-top: 0 !important;
+	}
+}
+@media only screen and (min-width: 812px) {
+	.topnav .active {
+		margin-left: 28% !important;
+	}
+}
+@media only screen and (min-width: 1001px) {
+	.topnav .active {
+		margin-left: 33% !important;
+	}
+}
