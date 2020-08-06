@@ -275,22 +275,22 @@ h1.title {
 .topnav a {
 	/* text-align: center; */
 	color: black;
-	padding: 14px 16px;
+	padding: 14px;
 	text-decoration: none;
-	font-size: 41px;
+	/* font-size: 41px; */
 	font-weight: 700;
-	display: block;
+	display: inline;
 	/* margin-right: 20px; */
 	/* width: 20%; */
 }
 
 .topnav a.icon {
-	background: black;
-	color: white;
-	display: block;
-	margin-top: 10px;
+	/* background: black; */
+	color: black;
+	display: inline;
 	margin-left: 22px;
-	position: absolute;
+
+	/* position: relative; */
 	left: 0;
 	top: 0;
 }
@@ -301,15 +301,36 @@ h1.title {
 }
 
 .topnav .active {
-	margin-left: 20% !important;
+	margin-left: 20%;
+	font-size: 26px !important;
 }
 
-/* @media only screen and (min-width: 340px) {
-} */
-@media only screen and (min-width: 660px) {
+@media only screen and (min-width: 340px) {
+	.fa {
+		font-size: 30px !important;
+	}
+	.topnav .active {
+		margin-left: 2% !important;
+	}
+}
+@media only screen and (min-width: 496px) {
+	.fa {
+		font-size: 30px !important;
+	}
+	.topnav .active {
+		margin-left: 15% !important;
+	}
+}
+@media only screen and (min-width: 670px) {
 	.active {
-		font-size: 20px;
+		font-size: 30px;
 		padding-top: 0 !important;
+	}
+	.topnav .active {
+		margin-left: 15% !important;
+	}
+	.fa {
+		font-size: 30px !important;
 	}
 }
 @media only screen and (min-width: 812px) {
